@@ -84,14 +84,14 @@ module ActsAsChained
       chain_impl(attribute, :read_attribute, :argument => attribute)
     end
     
-    # Chain query attribute method. Implements attribute? methods
-    def query_attribute_with_chain(attribute)
-      chain_impl(attribute, :query_attribute, :argument => attribute)
+    # Chain read_attribute_before_type_cast method
+    def read_attribute_before_type_cast_with_chain(attribute)
+      chain_impl(attribute, :read_attribute_before_type_cast, :argument => attribute)
     end
 
     def self.included(base)
       base.alias_method_chain :read_attribute, :chain
-      base.alias_method_chain :query_attribute, :chain
+      base.alias_method_chain :read_attribute_before_type_cast, :chain
     end
     
   end
