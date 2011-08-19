@@ -16,14 +16,8 @@ Documentation: http://rubydoc.info/gems/acts_as_chained/frames
 
 == INSTALLATION
 
-1) Install gem
-    > sudo gem install acts_as_chained
-
-2) Add to your environment.rb:
-      config.gem 'acts_as_chained'
-
-   Alternatively, add to Gemfile if using bunder:
-      gem 'acts_as_chained'
+Gem is not released yet. For now, just include the code in vendor/plugins. Gem
+release will follow.
 
 == REQUIREMENTS
 

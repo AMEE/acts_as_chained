@@ -1,5 +1,2 @@
 = Changelog
 
-== 1.0.0
- * First release
- * Allow chaining of attributes between objects
